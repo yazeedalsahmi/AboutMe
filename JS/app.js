@@ -73,17 +73,61 @@ switch(MyState) {
 case 'yes' :
 case 'y' :
   alert('I hope that' );
-  score++;
   break;
 case 'no' :
 case 'n' :
   alert('correct answer');
+  score++;
   break;
 default:
   alert('you must write YES or NO');
 }
 
+let MyTall ;
+MyTall = Number(MyTall);
+for (let attempt = 0 ; attempt < 4 ; attempt++ ){
+  MyTall = prompt ('How much you think my tall ? (please enter a number) you just have 4 attempt' );
+  MyTall = Number(MyTall);
+  if (MyTall === 170 ) {
+    console.log('WoW Great');
+    alert('WoW Great thats true');
+    score++;
+    break;
+  }else if ( MyTall > 170){
+    console.log('The guess is too high ,please try again' );
+    alert('The guess is too high you so close,please try again');
+  }
+  else{
+    console.log('The guess is too low  ,please try again' );
+    alert('The guess is too low ,please try again');
+  }
+}
+let MyFavCol = ['red','blue','black'];
+let UserInput;
+let index;
 
-alert('your Grade is ' + score + '/5');
-alert('My name is yazeed alshami , Im 24 old ,I studied Mechatronics Engineering in Al-Balqa university and Im single' );
+for (let attempt = 0 ; attempt < 6 ; attempt++ ){
+  UserInput = prompt ('which my favorite colors you think ? (you just have 6 attempt)' );
+  UserInput = UserInput.toLowerCase();
+  for( index = 0; index < MyFavCol.length; index++){
+    if (MyFavCol[index] === UserInput ) {
+      console.log('WoW Great thats true');
+      alert('WoW Great thats true');
+      score++;
+      break;
+    }
+  }
+  if (MyFavCol[index] === UserInput) {
+    console.log('WoW Great thats true');
+    alert('WoW Great thats true');
+    break;
+  }else {
+    console.log('please,try again' );
+    alert('please,try again');
+  }
+}
+
+
+alert('your Grade is ' + score + '/7');
+alert('My name is yazeed alshami , Im 24 old ,I studied Mechatronics Engineering in Al-Balqa university and Im single , My Tall is 170,my favorite colors is red,blue,and black');
 alert(' welcom ' + UserName + ' in my website');
