@@ -4,6 +4,8 @@ let score=0;
 let UserName = prompt('whats your name')
 alert('Hello ' + UserName + ' ,I hope you are fine');
 alert('I will ask you questions about myself. I hope you can guess the answers.');
+
+function firstQ() {
 let MyName = prompt('Is my name Zaid Al-Shami?');
 MyName = MyName.toLowerCase();
 if (MyName === 'yes' || MyName === 'y') {
@@ -19,9 +21,9 @@ else {
   alert('please answer with Yes or No');
 //console.log('please answer with Yes or No')
 }
+}
 
-
-
+function secondQ() {
 let MyAge = prompt('Am I 24 years old ?');
 MyAge = MyAge.toLowerCase();
 if (MyAge === 'yes' || MyAge === 'y') {
@@ -36,9 +38,9 @@ else if (MyAge === 'no' || MyAge === 'n') {
 else {
   alert('please answer with Yes or No');
 }
+}
 
-
-
+function thirdQ() {
 let MyMajoring = prompt('Did I study Mechatronics Engineering at the university?');
 MyMajoring = MyMajoring.toLowerCase();
 if (MyMajoring === 'yes' || MyMajoring === 'y') {
@@ -51,8 +53,9 @@ else if (MyMajoring === 'no' || MyMajoring === 'n') {
 else {
   alert('please answer with Yes or No');
 }
+}
 
-
+function fourthQ() {
 let MyUniversity = prompt('Did I study at the Hashemite University?')
 MyUniversity = MyUniversity.toLowerCase();
 if (MyUniversity === 'yes' || MyUniversity === 'y') {
@@ -65,8 +68,9 @@ else if (MyUniversity === 'no' || MyUniversity === 'n') {
 else {
   alert('please answer with Yes or No');
 }
+}
 
-
+function fifthQ() {
 let MyState = prompt('Am I married ?');
 MyState = MyState.toLowerCase();
 switch(MyState) {
@@ -82,7 +86,9 @@ case 'n' :
 default:
   alert('you must write YES or NO');
 }
+}
 
+function sixthQ() {
 let MyTall ;
 MyTall = Number(MyTall);
 for (let attempt = 0 ; attempt < 4 ; attempt++ ){
@@ -102,6 +108,9 @@ for (let attempt = 0 ; attempt < 4 ; attempt++ ){
     alert('The guess is too low ,please try again');
   }
 }
+}
+
+function seventhQ() {
 let MyFavCol = ['red','blue','black'];
 let UserInput;
 let index;
@@ -125,6 +134,7 @@ for (let attempt = 0 ; attempt < 6 ; attempt++ ){
     console.log('please,try again' );
     alert('please,try again');
   }
+}
 }
 
 
